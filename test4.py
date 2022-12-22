@@ -48,7 +48,6 @@ for i in range(M+N-1):
         j+=1
         a[j]=i
 a[0]=0
-print(a)
 for j in range(0,M+N-1):
     if 0<=j<a[1]:
         array3[j]=int(array2[j]*(j+2))
@@ -67,8 +66,6 @@ for j in range(0,M+N-1):
     elif array1[j]==0:
         array3[j]=None
 
-print(array3)
-#Bước gần cuối
 array4=[None]*(M+N-1)
 
 for i in range(0,a[1]):
@@ -90,7 +87,6 @@ for i in range(a[N-1]+1,M+N-1):
     elif array3[i]!=0:
         array4[i]=array1[array3[i]+a[N-1]]
 arr=np.array((array1,array4))
-print(arr)
 #______________________________________________
 q1=queue.Queue(M)
 q2=queue.Queue(P)
@@ -112,7 +108,6 @@ for i in range(a[N-1]+1,M+N-1):
         y[i]=time[array1[i]]
     tr[N-1]=max(y)+(kc.dis(dp,td[array1[a[N-1]+1]]))/Vtr
 y=[0]*(M+N)
-print(max(tr))
 
 ax=[]
 ax.append(0)
@@ -131,7 +126,6 @@ for k in range(0,N):
             for j in range(0,M+N-1):
                 if array1[j]==item:
                     array5[j]=0
-print(ax)
 
 qa=queue.Queue()
 qu=[None]*(M+N+2)
