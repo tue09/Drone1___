@@ -41,7 +41,9 @@ for i in range(0,M+N-1):
 print('Nhập các phần tử của mảng thứ hai:')
 for i in range(0,M+N-1):
     array2[i]=float(input("Nhập phần tử thứ %d: " %(i+1)))
-a=[0]*(N)
+#Bước 1
+#______________________________________________
+    a=[0]*(N)
 j=0
 for i in range(M+N-1):
     if array1[i]==0:
@@ -87,6 +89,7 @@ for i in range(a[N-1]+1,M+N-1):
     elif array3[i]!=0:
         array4[i]=array1[array3[i]+a[N-1]]
 arr=np.array((array1,array4))
+#Bước 2
 #______________________________________________
 q1=queue.Queue(M)
 q2=queue.Queue(P)
@@ -185,6 +188,8 @@ for j in range(0,(M+N+2)):
         if len(que[i])==0:
             que.pop(i)
             break
+#Bước 3
+#______________________________________________
 t=[0]*(M+1)
 for i in range(1,M+1):
     for j in range(0,M+N-1):
